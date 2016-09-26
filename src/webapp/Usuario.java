@@ -12,9 +12,9 @@ package webapp;
 public class Usuario {
     
     private String usuario;
-    private Long pass;
+    private int pass;
 
-    public Usuario(String usuario, Long pass) {
+    public Usuario(String usuario, int pass) {
         this.usuario = usuario;
         this.pass = pass;
     }
@@ -38,6 +38,22 @@ public class Usuario {
         
         return false;
         
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public int getPass() {
+        return pass;
+    }
+
+    public void setPass(int pass) {
+        this.pass = pass;
     }
     
     
